@@ -10,28 +10,27 @@ public class Task3_TimeConverter {
     public static void main(String[] args) {
         int seconds = 4500;
         int resultSeconds;
+        int minutes;
         int resultMinutes;
+        int hours;
         int resultHours;
+        int days;
         int resultDays;
-        int resultWeeks;
-        resultMinutes = seconds / 60;
+        int weeks;
         resultSeconds = seconds % 60;
-        System.out.println("A) " + resultMinutes + " minutes " + resultSeconds + " seconds");
-        resultHours = seconds / 3600;
-        resultMinutes = seconds % 3600 / 60;
-        resultSeconds = seconds % 3600 % 60;
-        System.out.println("B) " + resultHours + " hours " + resultMinutes + " minutes " + resultSeconds + " seconds");
-        resultDays = seconds / 3600 / 24;
-        resultHours = seconds % (3600 * 24) / 60 /60;
-        resultMinutes = seconds % (3600 * 24) % (60 * 60) / 60;
-        resultSeconds = seconds % (3600 * 24) % (60 * 60) % 60;
-        System.out.println("C) " + resultDays +" days "+ resultHours + " hours " + resultMinutes + " minutes " + resultSeconds + " seconds");
-        resultWeeks = seconds / 3600 / 24 / 7;
-        resultDays = seconds % (3600 * 24 * 7) / 3600 / 24;
-        resultHours = seconds % (3600 * 24 * 7) % (3600 * 24) / 60 / 60;
-        resultMinutes = seconds % (3600 * 24 * 7) % (3600 * 24) % (60 * 60) / 60;
-        resultSeconds = seconds % (3600 * 24 * 7) % (3600 * 24) % (60 * 60) % 60;
-        System.out.println("D) " + resultWeeks + " weeks " + resultDays + " days " + resultHours + " hours "
+        minutes = seconds / 60;
+        resultMinutes = seconds / 60 % 60;
+        hours = seconds / 60 / 60;
+        resultHours = hours % 24;
+        days = seconds / 60 / 60 / 24;
+        resultDays = days % 7;
+        weeks = seconds / 60 / 60 /24 / 7;
+        System.out.println("A) " + minutes + " minutes " + resultSeconds + " seconds");
+        System.out.println("B) " + hours + " hours " + resultMinutes +
+                " minutes " + resultSeconds + " seconds");
+        System.out.println("C) " + days +" days "+ resultHours + " hours " + resultMinutes +
+                " minutes " + resultSeconds + " seconds");
+        System.out.println("D) " + weeks + " weeks " + resultDays + " days " + resultHours + " hours "
                 + resultMinutes + " minutes " + resultSeconds + " seconds");
     }
 }
