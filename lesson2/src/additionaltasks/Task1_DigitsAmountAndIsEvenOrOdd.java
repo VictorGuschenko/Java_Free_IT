@@ -11,7 +11,6 @@ public class Task1_DigitsAmountAndIsEvenOrOdd {
     public static void main(String[] args) {
 
         int number = (int) (-100 + Math.random() * 200);
-        number = -3;
         if (number > -10 && number < 10) {
             System.out.print(number + " is a one-digit ");
         } else if (number > -100 && number < -9 || number > 9 && number < 100) {

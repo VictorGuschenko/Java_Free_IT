@@ -7,12 +7,12 @@ public class Task11_MultiplicationThroughTheSum {
 
     public static void main(String[] args) {
 
-        int a = 1;
-        int b = 9;
+        int a = (int) (Math.random() * 20);
+        int b = (int) (Math.random() * 20);
         int result = 0;
         for (int i = 0; i < b; i++) {
             result += a;
         }
-        System.out.println(result);
+        System.out.println(a + " * " + b + " = " + result);
     }
 }
