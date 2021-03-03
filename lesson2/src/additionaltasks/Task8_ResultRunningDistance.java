@@ -11,11 +11,11 @@ public class Task8_ResultRunningDistance {
 
         double distancePerDay = 10;
         double sumDistance = 10;
-        int days = 3;
+        int days = 7;
         for (int i = 0; i < days - 1; i++) {
             distancePerDay *= 1.1;
             sumDistance += distancePerDay;
         }
-        System.out.println(sumDistance);
+        System.out.format("%.3f", sumDistance);
     }
 }
