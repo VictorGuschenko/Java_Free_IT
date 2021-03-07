@@ -1,3 +1,5 @@
+package lesson1;
+
 public class Task5_NumberWithDifferentDigits {
     public static void main(String[] args) {
         int number = 1334;
