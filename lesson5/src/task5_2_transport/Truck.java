@@ -1,23 +1,17 @@
 package task5_2_transport;
 
 public class Truck extends LandTransport{
-    private double liftCapacity;
+    private final double LIFT_CAPACITY;
 
     public Truck(int HORSE_POWER, int MAX_SPEED,
                  Brand brand, int WEIGHT,
                  int WHEEL_NUMBERS, double FUEL_CONSUMPTION,
-                 double liftCapacity) {
+                 double LIFT_CAPACITY) {
         super(HORSE_POWER, MAX_SPEED, brand, WEIGHT, WHEEL_NUMBERS, FUEL_CONSUMPTION);
-        this.liftCapacity = liftCapacity;
+        this.LIFT_CAPACITY = LIFT_CAPACITY;
     }
-    public boolean isTrackOverloaded(double cargo){
-        if (cargo > this.liftCapacity) {
-            System.out.println("Вам нужен грузовик побольше");
-            return true;
-        } else {
-            System.out.println("Грузовик загружен");
-            return false;
-        }
+    public void isTrackOverloaded(double cargo){
+        System.out.println(cargo > this.LIFT_CAPACITY ? "Вам нужен грузовик побольше" : "Грузовик загружен");
     }
 
     @Override
@@ -25,12 +19,12 @@ public class Truck extends LandTransport{
         return "Truck{" +
                 "HORSE_POWER=" + getHORSE_POWER() +
                 ", MAX_SPEED=" + getMAX_SPEED() +
-                ", brand=" + getBrand() +
+                ", brand=" + getBRAND() +
                 ", WEIGHT=" + getWEIGHT() + "kg" +
                 ", kWattPower=" + powerConvert() +
                 ", WHEEL_NUMBERS=" + getWHEEL_NUMBERS() +
                 ", FUEL_CONSUMPTION=" + getFUEL_CONSUMPTION() +
-                "liftCapacity=" + liftCapacity +
+                "liftCapacity=" + LIFT_CAPACITY +
                 '}';
     }
 }

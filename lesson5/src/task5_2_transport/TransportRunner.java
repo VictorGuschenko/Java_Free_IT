@@ -25,6 +25,9 @@ public class TransportRunner {
         truck1.isTrackOverloaded(15001.5);
         truck1.isTrackOverloaded(14999.9);
         System.out.println(truck1);
+        CivilAirTransport plane = new CivilAirTransport(5000, 1800, Brand.AIRBUS,
+                60000, 67.0,2360, 698,true);
+        System.out.println(plane);
 
     }
 }

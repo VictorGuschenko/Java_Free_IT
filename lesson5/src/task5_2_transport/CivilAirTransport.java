@@ -11,14 +11,8 @@ public class CivilAirTransport extends AirTransport{
         this.MAX_PASSENGERS = PASSENGERS;
         this.HAS_BUSINESS_CLASS = HAS_BUSINESS_CLASS;
     }
-    public boolean isPlaneOverloaded(int passengers){
-        if (passengers > this.MAX_PASSENGERS) {
-            System.out.println("Вам нужен самолет побольше");
-            return true;
-        } else {
-            System.out.println("Самолет загружен");
-            return false;
-        }
+    public void isPlaneOverloaded(int passengers){
+        System.out.println(passengers > this.MAX_PASSENGERS ? "Вам нужен самолет побольше" : "Самолет загружен");
     }
 
     public int getMAX_PASSENGERS() {
@@ -34,7 +28,7 @@ public class CivilAirTransport extends AirTransport{
         return "CivilAirTransport{" +
                 " HORSE_POWER=" + getHORSE_POWER() +
                 ", MAX_SPEED=" + getMAX_SPEED() +
-                ", brand=" + getBrand() +
+                ", brand=" + getBRAND() +
                 ", WEIGHT=" + getWEIGHT() +
                 ", kWattPower=" + powerConvert() +
                 ", WINGSPAN=" + getWINGSPAN() +

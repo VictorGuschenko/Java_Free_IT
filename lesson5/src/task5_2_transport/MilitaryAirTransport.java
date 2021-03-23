@@ -1,8 +1,8 @@
 package task5_2_transport;
 
 public class MilitaryAirTransport extends AirTransport {
-    private int rocketAmount;
     private final boolean HAS_CATAPULT_SYSTEM;
+    private int rocketAmount;
 
     public MilitaryAirTransport(int HORSE_POWER, int MAX_SPEED,
                                 Brand brand, int WEIGHT, double WINGSPAN,
@@ -34,7 +34,7 @@ public class MilitaryAirTransport extends AirTransport {
         return "MilitaryAirTransport{" +
                 "HORSE_POWER=" + getHORSE_POWER() +
                 ", MAX_SPEED=" + getMAX_SPEED() +
-                ", brand=" + getBrand() +
+                ", brand=" + getBRAND() +
                 ", WEIGHT=" + getWEIGHT() +
                 ", kWattPower=" + powerConvert() +
                 ", WINGSPAN=" + getWINGSPAN() +
