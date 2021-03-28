@@ -1,5 +1,5 @@
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Target;
+package task6_1_annotation;
+
 import java.util.Objects;
 
 
@@ -33,7 +33,7 @@ public class MyService {
 
     @Override
     public String toString() {
-        return "MyService{" +
+        return "task6_1_annotation.MyService{" +
                 "varInt=" + varInt +
                 ", varString='" + varString + '\'' +
                 '}';
