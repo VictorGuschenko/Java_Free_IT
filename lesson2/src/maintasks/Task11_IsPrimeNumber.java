@@ -11,7 +11,8 @@ public class Task11_IsPrimeNumber {
         int number = (int) (Math.random() * 1000);
         int counter = 2;
         boolean isPrime = true;
-        while ((int) Math.sqrt(number) > counter) {
+        int sqrtNumber = (int) Math.sqrt(number);
+        while (sqrtNumber > counter) {
             if (number % counter == 0) {
                 isPrime = false;
                 break;
