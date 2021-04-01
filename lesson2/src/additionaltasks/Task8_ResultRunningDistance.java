@@ -12,7 +12,7 @@ public class Task8_ResultRunningDistance {
         double distancePerDay = 10;
         double sumDistance = 10;
         int days = 7;
-        for (int i = 0; i < days - 1; i++) {
+        for (int i = 1; i < days; i++) {
             distancePerDay *= 1.1;
             sumDistance += distancePerDay;
         }
