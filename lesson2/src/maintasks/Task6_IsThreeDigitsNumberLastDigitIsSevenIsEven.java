@@ -1,7 +1,5 @@
 package maintasks;
 
-import java.util.Random;
-
 /**
  * Создайте число. Определите, является ли число трехзначным. Определите, является
  * ли его последняя цифра семеркой. Определите, является ли число четным.
@@ -10,8 +8,7 @@ public class Task6_IsThreeDigitsNumberLastDigitIsSevenIsEven {
 
     public static void main(String[] args) {
 
-        Random rand = new Random();
-        int number = rand.nextInt(4000) - 2000;
+        int number = (int) (Math.random() * 2002 - 1001); // random int range [-1000, 1000]
         if ((number >= -999 && number <= -100) || (number >= 100 && number <= 999)) {
             System.out.println(number + " is  a three-digits number");
         } else {
