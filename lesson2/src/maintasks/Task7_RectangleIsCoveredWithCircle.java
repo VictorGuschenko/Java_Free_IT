@@ -12,8 +12,11 @@ public class Task7_RectangleIsCoveredWithCircle {
         double sideB = Math.random() * 10;
         double rad = Math.random() * 10;
         boolean result;
-        double radMin = Math.sqrt(sideA * 0.5 * sideA * 0.5 + sideB * 0.5 * sideB * 0.5);
+        double radMin = Math.sqrt(Math.pow(sideA/2, 2) + Math.pow(sideB/2, 2));
+        System.out.println(radMin);
         result = (rad >= radMin);
+        System.out.println("side a: " + sideA);
+        System.out.println("side b: " + sideB);
         System.out.println("Circle with radius " + rad + " covers the rectangle: " + result);
     }
 }
