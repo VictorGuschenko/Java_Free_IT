@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<devices>
+    <device>
+        <name>DELL display</name>
+        <origin>USA</origin>
+        <price>200.25</price>
+        <type>
+            <isPeripheral>false</isPeripheral>
+            <powerConsumption>70</powerConsumption>
+            <hasCooler>false</hasCooler>
+        </type>
+        <ports>
+            <usb>true</usb>
+            <com>false</com>
+            <lan>false</lan>
+            <lpt>false</lpt>
+        </ports>
+        <isImportant>true</isImportant>
+    </device>
+
+    <device>
+        <name>Epson N345</name>
+        <origin>Canada</origin>
+        <price>50</price>
+        <type>
+            <isPeripheral>true</isPeripheral>
+            <powerConsumption>500</powerConsumption>
+            <hasCooler>true</hasCooler>
+        </type>
+        <ports>
+            <usb>true</usb>
+            <com>true</com>
+            <lan>true</lan>
+            <lpt>false</lpt>
+        </ports>
+        <isImportant>false</isImportant>
+    </device>
+
+</devices>
