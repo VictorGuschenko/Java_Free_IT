@@ -44,6 +44,7 @@ public class ApplianceRunner {
                 new Hdd("SSD", 1000));
         pc.plugIn();
         pc.plugOut();
+        System.out.println(dishWasher1);
 
     }
 }

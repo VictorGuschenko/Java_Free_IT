@@ -1,24 +1,24 @@
 package task5_2_transport;
 
 public class Car extends LandTransport {
-    private final BodyStyle BODY_STYLE;
-    private final int MAX_PASSENGERS;
+    private final BodyStyle bodyStyle;
+    private final int maxPassengers;
 
-    public Car(int HORSE_POWER, int MAX_SPEED,
-               Brand brand, int WEIGHT,
-               int WHEEL_NUMBERS, double FUEL_CONSUMPTION,
+    public Car(int horsePower, int maxSpeed,
+               Brand brand, int weight,
+               int wheelNumbers, double fuelConsumption,
                BodyStyle bodyStyle, int maxPassengers) {
-        super(HORSE_POWER, MAX_SPEED, brand, WEIGHT, WHEEL_NUMBERS, FUEL_CONSUMPTION);
-        this.BODY_STYLE = bodyStyle;
-        this.MAX_PASSENGERS = maxPassengers;
+        super(horsePower, maxSpeed, brand, weight, wheelNumbers, fuelConsumption);
+        this.bodyStyle = bodyStyle;
+        this.maxPassengers = maxPassengers;
     }
 
     public void printCarStatement (double timeHours){
-        double distance = getMAX_SPEED() * timeHours;
-        System.out.println("За время " + timeHours + " ч, автомобиль " + this.getBRAND() +
-                " двигаясь с максимальной скоростью " + getMAX_SPEED() +
+        double distance = getMaxSpeed() * timeHours;
+        System.out.println("За время " + timeHours + " ч, автомобиль " + this.getBrand() +
+                " двигаясь с максимальной скоростью " + getMaxSpeed() +
                 " км/ч проедет " + distance + " км  и израсходует " +
-                fuelConsumptionCalculate(distance, getFUEL_CONSUMPTION()) +
+                fuelConsumptionCalculate(distance, getFuelConsumption()) +
                 " литров топлива.");
     }
     private double fuelConsumptionCalculate(double distance, double fuelConsumption){
@@ -28,15 +28,15 @@ public class Car extends LandTransport {
     @Override
     public String toString() {
         return  "Car{" +
-                "HORSE_POWER=" + getHORSE_POWER() +
-                ", MAX_SPEED=" + getMAX_SPEED() +
-                ", brand=" + getBRAND() +
-                ", WEIGHT=" + getWEIGHT() + "kg" +
+                "HORSE_POWER=" + getHorsePower() +
+                ", MAX_SPEED=" + getMaxSpeed() +
+                ", brand=" + getBrand() +
+                ", WEIGHT=" + getWeight() + "kg" +
                 ", kWattPower=" + powerConvert() +
-                ", WHEEL_NUMBERS=" + getWHEEL_NUMBERS() +
-                ", FUEL_CONSUMPTION=" + getFUEL_CONSUMPTION() +
-                ", bodyStyle=" + BODY_STYLE +
-                ", maxPassengers=" + MAX_PASSENGERS +
+                ", WHEEL_NUMBERS=" + getWheelNumbers() +
+                ", FUEL_CONSUMPTION=" + getFuelConsumption() +
+                ", bodyStyle=" + bodyStyle +
+                ", maxPassengers=" + maxPassengers +
                 '}';
     }
 }

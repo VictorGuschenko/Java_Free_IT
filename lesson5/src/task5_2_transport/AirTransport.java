@@ -1,30 +1,30 @@
 package task5_2_transport;
 
 public abstract class AirTransport extends Transport{
-    private final double WINGSPAN;
-    private final int MIN_LENGTH_RUNWAY;
+    private final double wingspan;
+    private final int minLengthRunway;
 
-    public AirTransport(int HORSE_POWER, int MAX_SPEED,
-                        Brand brand, int WEIGHT,
-                        double WINGSPAN, int MIN_LENGTH_RUNWAY) {
-        super(HORSE_POWER, MAX_SPEED, brand, WEIGHT);
-        this.WINGSPAN = WINGSPAN;
-        this.MIN_LENGTH_RUNWAY = MIN_LENGTH_RUNWAY;
+    public AirTransport(int horsePower, int maxSpeed,
+                        Brand brand, int weight,
+                        double wingspan, int minLengthRunway) {
+        super(horsePower, maxSpeed, brand, weight);
+        this.wingspan = wingspan;
+        this.minLengthRunway = minLengthRunway;
     }
 
-    public double getWINGSPAN() {
-        return WINGSPAN;
+    public double getWingspan() {
+        return wingspan;
     }
 
-    public int getMIN_LENGTH_RUNWAY() {
-        return MIN_LENGTH_RUNWAY;
+    public int getMinLengthRunway() {
+        return minLengthRunway;
     }
 
     @Override
     public String toString() {
         return "AirTransport{" +
-                "WINGSPAN=" + WINGSPAN +
-                ", MIN_LENGTH_RUNWAY=" + MIN_LENGTH_RUNWAY +
+                "WINGSPAN=" + wingspan +
+                ", MIN_LENGTH_RUNWAY=" + minLengthRunway +
                 '}';
     }
 }

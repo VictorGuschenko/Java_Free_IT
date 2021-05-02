@@ -1,16 +1,16 @@
 package task5_2_transport;
 
 public class MilitaryAirTransport extends AirTransport {
-    private final boolean HAS_CATAPULT_SYSTEM;
+    private final boolean hasCatapultSystem;
     private int rocketAmount;
 
-    public MilitaryAirTransport(int HORSE_POWER, int MAX_SPEED,
-                                Brand brand, int WEIGHT, double WINGSPAN,
-                                int MIN_LENGTH_RUNWAY, int rocketAmount,
-                                boolean HAS_CATAPULT_SYSTEM) {
-        super(HORSE_POWER, MAX_SPEED, brand, WEIGHT, WINGSPAN, MIN_LENGTH_RUNWAY);
+    public MilitaryAirTransport(int horsePower, int maxSpeed,
+                                Brand brand, int weight, double wingspan,
+                                int minLengthRunway, int rocketAmount,
+                                boolean hasCatapultSystem) {
+        super(horsePower, maxSpeed, brand, weight, wingspan, minLengthRunway);
         this.rocketAmount = rocketAmount;
-        this.HAS_CATAPULT_SYSTEM = HAS_CATAPULT_SYSTEM;
+        this.hasCatapultSystem = hasCatapultSystem;
     }
 
     public void launchRocket() {
@@ -18,29 +18,29 @@ public class MilitaryAirTransport extends AirTransport {
     }
 
     public void catapulting() {
-        System.out.println(HAS_CATAPULT_SYSTEM ? "Катапультирование прошло успешно" : "У вас нет такой системы");
+        System.out.println(hasCatapultSystem ? "Катапультирование прошло успешно" : "У вас нет такой системы");
     }
 
     public int getRocketAmount() {
         return rocketAmount;
     }
 
-    public boolean isHAS_CATAPULT_SYSTEM() {
-        return HAS_CATAPULT_SYSTEM;
+    public boolean isHasCatapultSystem() {
+        return hasCatapultSystem;
     }
 
     @Override
     public String toString() {
         return "MilitaryAirTransport{" +
-                "HORSE_POWER=" + getHORSE_POWER() +
-                ", MAX_SPEED=" + getMAX_SPEED() +
-                ", brand=" + getBRAND() +
-                ", WEIGHT=" + getWEIGHT() +
+                "HORSE_POWER=" + getHorsePower() +
+                ", MAX_SPEED=" + getMaxSpeed() +
+                ", brand=" + getBrand() +
+                ", WEIGHT=" + getWeight() +
                 ", kWattPower=" + powerConvert() +
-                ", WINGSPAN=" + getWINGSPAN() +
-                ", MIN_LENGTH_RUNWAY=" + getMIN_LENGTH_RUNWAY() +
+                ", WINGSPAN=" + getWingspan() +
+                ", MIN_LENGTH_RUNWAY=" + getMinLengthRunway() +
                 ", rocketAmount=" + rocketAmount +
-                ", HAS_CATAPULT_SYSTEM=" + HAS_CATAPULT_SYSTEM +
+                ", HAS_CATAPULT_SYSTEM=" + hasCatapultSystem +
                 '}';
     }
 }

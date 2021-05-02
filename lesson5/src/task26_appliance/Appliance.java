@@ -19,14 +19,11 @@ public abstract class Appliance implements Plugging {
 
     @Override
     public String toString() {
-        return "Appliance{" +
-                "brand=" + brand +
+        return "brand=" + brand +
                 ", dimensions=" + dimensions +
                 ", powerSupply=" + powerSupply +
                 ", name='" + name + '\'' +
-                ", weight=" + weight + "kg" +
-                ", isTurnOn=" + isTurnOn +
-                '}';
+                ", weight=" + weight + "kg";
     }
 }
 

@@ -17,13 +17,13 @@ public class Truck extends LandTransport{
     @Override
     public String toString() {
         return "Truck{" +
-                "HORSE_POWER=" + getHORSE_POWER() +
-                ", MAX_SPEED=" + getMAX_SPEED() +
-                ", brand=" + getBRAND() +
-                ", WEIGHT=" + getWEIGHT() + "kg" +
+                "HORSE_POWER=" + getHorsePower() +
+                ", MAX_SPEED=" + getMaxSpeed() +
+                ", brand=" + getBrand() +
+                ", WEIGHT=" + getWeight() + "kg" +
                 ", kWattPower=" + powerConvert() +
-                ", WHEEL_NUMBERS=" + getWHEEL_NUMBERS() +
-                ", FUEL_CONSUMPTION=" + getFUEL_CONSUMPTION() +
+                ", WHEEL_NUMBERS=" + getWheelNumbers() +
+                ", FUEL_CONSUMPTION=" + getFuelConsumption() +
                 "liftCapacity=" + LIFT_CAPACITY +
                 '}';
     }

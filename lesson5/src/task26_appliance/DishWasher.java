@@ -34,16 +34,6 @@ public class DishWasher extends WashingAppliance implements Plugging{
 
     @Override
     public String toString() {
-        return "DishWasher{" +
-                "brand=" + brand +
-                ", dimensions=" + dimensions +
-                ", powerSupply=" + powerSupply +
-                ", name='" + name + '\'' +
-                ", weight=" + weight +
-                ", isTurnOn=" + isTurnOn +
-                ", basketsAmount=" + basketsAmount +
-                ", waterConsumption=" + waterConsumption +
-                ", loadingType='" + loadingType + '\'' +
-                '}';
+        return "";
     }
 }
