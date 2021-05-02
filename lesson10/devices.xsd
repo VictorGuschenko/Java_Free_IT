@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="devices">
+
+        <xs:complexType>
+
+            <xs:sequence>
+                <xs:element name="device" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="lettersDigits" id="ID"/>
+                            <xs:element name="origin" type="xs:string"/>
+                            <xs:element name="price" type="xs:double"/>
+                            <xs:element name="type" type="Type"/>
+                            <xs:element name="ports" type="Ports"/>
+                            <xs:element name="isImportant" type="xs:boolean"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="Type">
+        <xs:sequence>
+            <xs:element name="isPeripheral" type="xs:boolean"/>
+            <xs:element name="powerConsumption" type="xs:double"/>
+            <xs:element name="hasCooler" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Ports">
+        <xs:sequence>
+            <xs:element name="usb" type="xs:boolean"/>
+            <xs:element name="com" type="xs:boolean"/>
+            <xs:element name="lan" type="xs:boolean"/>
+            <xs:element name="lpt" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="lettersDigits">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9 a-zA-Z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
