@@ -1,3 +1,5 @@
+package library;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -49,7 +51,7 @@ public class Library {
     public void editBook(int id, String newTitle, String newGenreName) {
         books.get(id).setTitle(newTitle);
         books.get(id).setGenreId(new Genre(newGenreName));
-        System.out.println("Book id=" + id + " has been edited");
+        System.out.println("library.Book id=" + id + " has been edited");
     }
 
     public boolean hasBookInLibrary(int id) {
