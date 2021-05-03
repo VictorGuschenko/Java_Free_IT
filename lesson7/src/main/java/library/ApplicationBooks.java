@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ApplicationBooks {
     static Scanner scanner = new Scanner(System.in);
-    static public Library library = new Library();
+    public static Library library = new Library();
 
     public void start() {
         System.out.println("Welcome to the library");
@@ -47,6 +47,7 @@ public class ApplicationBooks {
                 System.err.println("Wrong input.");
             }
         }
+        scanner.close();
     }
 
     public static void printBooks() {
