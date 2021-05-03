@@ -14,7 +14,13 @@ public class MilitaryAirTransport extends AirTransport {
     }
 
     public void launchRocket() {
-        System.out.println(rocketAmount-- > 0 ? "Ракета пошла…" : "Боеприпасы отсутствуют");
+        if(rocketAmount > 0){
+            System.out.println("Ракета пошла...");
+            rocketAmount--;
+        }else {
+            System.out.println("Боеприпасы отсутствуют");
+        }
+//        System.out.println(rocketAmount-- > 0 ? "Ракета пошла…" : "Боеприпасы отсутствуют");
     }
 
     public void catapulting() {
@@ -32,13 +38,7 @@ public class MilitaryAirTransport extends AirTransport {
     @Override
     public String toString() {
         return "MilitaryAirTransport{" +
-                "HORSE_POWER=" + getHorsePower() +
-                ", MAX_SPEED=" + getMaxSpeed() +
-                ", brand=" + getBrand() +
-                ", WEIGHT=" + getWeight() +
-                ", kWattPower=" + powerConvert() +
-                ", WINGSPAN=" + getWingspan() +
-                ", MIN_LENGTH_RUNWAY=" + getMinLengthRunway() +
+                super.toString() +
                 ", rocketAmount=" + rocketAmount +
                 ", HAS_CATAPULT_SYSTEM=" + hasCatapultSystem +
                 '}';

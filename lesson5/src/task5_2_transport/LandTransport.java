@@ -22,9 +22,9 @@ public abstract class LandTransport extends Transport {
 
     @Override
     public String toString() {
-        return "LandTransport{" +
-                "WHEEL_NUMBERS=" + wheelNumbers +
-                ", FUEL_CONSUMPTION=" + fuelConsumption +
-                '}';
+        return super.toString() +
+                " wheels=" + wheelNumbers +
+                ", fuel_consumption=" + fuelConsumption +
+                ',';
     }
 }

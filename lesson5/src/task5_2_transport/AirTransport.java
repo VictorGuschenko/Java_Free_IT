@@ -22,9 +22,9 @@ public abstract class AirTransport extends Transport{
 
     @Override
     public String toString() {
-        return "AirTransport{" +
-                "WINGSPAN=" + wingspan +
-                ", MIN_LENGTH_RUNWAY=" + minLengthRunway +
-                '}';
+        return  super.toString() +
+                " wingspan=" + wingspan +
+                ", min_length_runway=" + minLengthRunway +
+                ',';
     }
 }

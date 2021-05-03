@@ -26,15 +26,9 @@ public class CivilAirTransport extends AirTransport{
     @Override
     public String toString() {
         return "CivilAirTransport{" +
-                " HORSE_POWER=" + getHorsePower() +
-                ", MAX_SPEED=" + getMaxSpeed() +
-                ", brand=" + getBrand() +
-                ", WEIGHT=" + getWeight() +
-                ", kWattPower=" + powerConvert() +
-                ", WINGSPAN=" + getWingspan() +
-                ", MIN_LENGTH_RUNWAY=" + getMinLengthRunway() +
-                ", MAX_PASSENGERS=" + maxPassengers +
-                ", HAS_BUSINESS_CLASS=" + hasBusinessClass +
+                super.toString() +
+                " maxPassengers=" + maxPassengers +
+                ", hasBusinessClass=" + hasBusinessClass +
                 '}';
     }
 }

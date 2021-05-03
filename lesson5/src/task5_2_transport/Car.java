@@ -27,15 +27,9 @@ public class Car extends LandTransport {
 
     @Override
     public String toString() {
-        return  "Car{" +
-                "HORSE_POWER=" + getHorsePower() +
-                ", MAX_SPEED=" + getMaxSpeed() +
-                ", brand=" + getBrand() +
-                ", WEIGHT=" + getWeight() + "kg" +
-                ", kWattPower=" + powerConvert() +
-                ", WHEEL_NUMBERS=" + getWheelNumbers() +
-                ", FUEL_CONSUMPTION=" + getFuelConsumption() +
-                ", bodyStyle=" + bodyStyle +
+        return  "Car {" +
+                super.toString() +
+                "bodyStyle=" + bodyStyle +
                 ", maxPassengers=" + maxPassengers +
                 '}';
     }

@@ -19,13 +19,12 @@ public abstract class Transport {
 
     @Override
     public String toString() {
-        return "Transport{" +
-                "HORSE_POWER=" + horsePower +
-                ", MAX_SPEED=" + maxSpeed +
+        return "Horse_power=" + horsePower +
+                ", max_speed=" + maxSpeed +
                 ", brand=" + brand +
-                ", WEIGHT=" + weight +
+                ", weight=" + weight +
                 ", kWattPower=" + powerConvert() +
-                '}';
+                ',';
     }
 
     public int getHorsePower() {
