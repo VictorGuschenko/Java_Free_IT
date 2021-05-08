@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * Имеется файл с текстом, в котором присутствуют числа. Найти все числа,
@@ -37,7 +38,6 @@ public class FindNumbersAndGetSum {
 
     public static List<Double> getDigitsList(StringBuilder text) {
         List<Double> list = new ArrayList<>();
-
         Pattern pattern = Pattern.compile("(-?[0-9]+(?:[.][0-9]+)?)");
         Matcher matcher = pattern.matcher(text);
         while (matcher.find()) {
@@ -46,17 +46,12 @@ public class FindNumbersAndGetSum {
         return list;
     }
 
-    public static double sumNumbers(List<Double> numbersList){
-        double sum = 0;
-        for (Double aDouble : numbersList) {
-            sum += aDouble;
-        }
-        return sum;
+    public static double sumNumbers(List<Double> numbersList) {
+        return numbersList.stream().mapToDouble(Double::valueOf).sum();
     }
 
-    public static List<Double> getUniqueNumbers(List<Double> numberList){
-        Set<Double> uniqueNumbers = new LinkedHashSet<>(numberList);
-        return new ArrayList<>(uniqueNumbers);
+    public static List<Double> getUniqueNumbers(List<Double> numberList) {
+        return numberList.stream().distinct().collect(Collectors.toList());
     }
 
 }
