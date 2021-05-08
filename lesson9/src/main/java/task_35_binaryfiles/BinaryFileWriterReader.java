@@ -13,7 +13,7 @@ public class BinaryFileWriterReader {
         try (DataOutputStream dos = new DataOutputStream(
                 new BufferedOutputStream(
                         new FileOutputStream("src/main/java/task_35_binaryfiles/binaryFileNumbers.dat")))) {
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < 3; i++) {
                 dos.writeInt((int) (Math.random() * 20));
             }
         } catch (IOException e) {
@@ -29,12 +29,8 @@ public class BinaryFileWriterReader {
         } catch (IOException ignored) {
         }
 
-        double sum = 0;
-        for (Integer listNumber : listNumbers) {
-            sum += listNumber;
-        }
-        double averageValue = sum / listNumbers.size();
+        double sum = listNumbers.stream().mapToInt(Integer::intValue).average().orElse(0.0);
         System.out.println(listNumbers);
-        System.out.println("average: " + averageValue);
+        System.out.format("average %.3f: ", sum);
     }
 }
