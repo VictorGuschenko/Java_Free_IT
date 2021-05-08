@@ -1,0 +1,2 @@
+Welcome! This  5 website is (quite obviously) a small text generator.  4 It's fairly self explanatory - you put some text 3 in the first box, 
+ and it'll 2 convert it into 0 three different small  1 text "fonts" for you. 
