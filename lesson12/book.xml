@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+    <book>
+        <id>1</id>
+        <title>Monte Cristo</title>
+        <genre>Adventure</genre>
+        <pages>689</pages>
+        <cover>
+            <color>blue</color>
+            <quality>soft</quality>
+        </cover>
+    </book>
+
+    <book>
+        <id>2</id>
+        <title>Headless horseman</title>
+        <genre>Adventure</genre>
+        <pages>454</pages>
+        <cover>
+            <color>red</color>
+            <quality>firm</quality>
+        </cover>
+    </book>
+
+    <book>
+        <id>3</id>
+        <title>Jane Air</title>
+        <genre>Romantic</genre>
+        <pages>368</pages>
+        <cover>
+            <color>pink</color>
+            <quality>soft</quality>
+        </cover>
+    </book>
+</books>
+
+
+

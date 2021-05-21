@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+    <book title="Crime and Punishment">
+        <author>Fyodor Dostoyevsky</author>
+        <genre>Novel</genre>
+        <isbn>964-3-15-173510-9</isbn>
+    </book>
+    <book title="Arch of triumph">
+        <author>Erich Maria Remarque</author>
+        <genre>Novel</genre>
+        <isbn>568-4-83-376545-1</isbn>
+    </book>
+    <book title="Effortless English">
+        <author>A.J. Hoge</author>
+        <genre>Science</genre>
+        <isbn>265-4-83-372145-4</isbn>
+    </book>
+    <book title="Notes from underground">
+        <author>Fyodor Dostoyevsky</author>
+        <genre>Novel</genre>
+        <isbn>129-3-83-373645-0</isbn>
+    </book>
+    <book title="Fight Club">
+        <author>Chuck Palahniuk</author>
+        <genre>Novel</genre>
+        <isbn>765-4-43-373445-1</isbn>
+    </book>
+    <book title="The Idiot">
+        <author>Fyodor Dostoyevsky</author>
+        <genre>Novel</genre>
+        <isbn>999-4-83-376145-6</isbn>
+    </book>
+</books>
